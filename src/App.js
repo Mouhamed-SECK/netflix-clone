@@ -1,5 +1,6 @@
 import React from "react";
 import Row from "./components/Row";
+import Banner from "./components/Banner";
 
 import requests from "./api/request";
 
@@ -7,8 +8,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <h2>Netflix clone</h2>
-
+      <Banner />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
